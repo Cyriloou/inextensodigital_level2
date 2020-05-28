@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -27,25 +25,34 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## [front/react] Github user search
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Instructions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Create an input text in which as the user types in, launch a search against
+Github users and return a result list.
 
-## Learn More
+### The subject
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Query against Github Api: GET https://api.github.com/search/users?q={USER}.
+2. Try to not add any dependency library on a freshly created
+   [create react app](https://github.com/facebook/create-react-app).
+3. Don't forget to check against modern ways to make HTTP requests on frontend side.
+4. Bonus: manage edge cases (no results, github api rate limit)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Guidelines
 
-### Code Splitting
+- Use React.js to render the view
+- Push your code to a Github repository
+- Document what you've done
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Evaluation
+
+- Quality of the code
+- Scalability of the algorithm
+- Usage of good practices and modern javascript
 
 ### Analyzing the Bundle Size
 
